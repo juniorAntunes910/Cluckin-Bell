@@ -2,7 +2,7 @@
   "name": "projeto-hamburgueria_html_css_js",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
+  "scripts": { 
     "dev": "npx tailwindcss -i ./style.css -o ./styles/output.css --watch"
   },
   "keywords": [],
