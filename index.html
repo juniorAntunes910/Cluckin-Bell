@@ -42,7 +42,7 @@
     <!-- Inicio Menu-->
     <div id="menu">
 
-        <main class="grid grid-cols-1" >
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
             <!--Produto Item-->
             <div class="flex gap-2">
                 <img src="./Assets/hamb-1.png" alt="Hamburguer Smash"
@@ -52,18 +52,129 @@
                     <p class="text-sm">Pão levinho de fermentação natural de trigo, hamburguer 160g, queijo prato e
                         maionese da casa.</p>
 
-                    <div class = "flex items-center gap-2 justify-between mt-3">
+                    <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 18.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                        data-name="Hamburguer Smash">
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                            data-price="18.90" data-name="Hamburguer Smash">
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
                 </div>
             </div>
             <!--FIm do Produto Item-->
-            
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./Assets/hamb-2.png" alt="Hamburguer Duplo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hamburguer Duplo</p>
+                    <p class="text-sm">Pão levinho de fermentação natural de trigo, hamburguer 160g, queijo prato e
+                        maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Duplo"
+                            data-price="32.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIm do Produto Item-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./Assets/hamb-3.png" alt="Hamburguer Salada"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hamburguer Salada</p>
+                    <p class="text-sm">Pão levinho de fermentação natural de trigo, hamburguer 160g, queijo prato e
+                        maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Salada"
+                            data-price="35.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIm do Produto Item-->
+
+            <!--Produto Item-->
+            <div class="flex gap-2">
+                <img src="./Assets/hamb-4.png" alt="Hamburguer da Casa"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
+                <div>
+                    <p class="font-bold">Hamburguer da Casa</p>
+                    <p class="text-sm">Pão levinho de fermentação natural de trigo, hamburguer 160g, queijo prato e
+                        maionese da casa.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da Casa"
+                            data-price="30.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIm do Produto Item-->
+
+
         </main>
+
+        <!-- Bebidas-->
+        <div class="mx-auto max-w-7x1 px-2 my-2 ">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+
+            <!-- Div Bebidas-->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+                <!--Bebida Item-->
+                <div class="flex gap-2 w-full">
+                    <img src="./Assets/refri-1.png" alt="Coca Lata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
+                    <div class = "w-full">
+                        <p class="font-bold">Coca lata</p>
+                        <p class="text-sm">Coca-Cola lata 350ml</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 6,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                                data-price="6" data-name="Coca Lata">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--FIm do Bebida Item-->
+                
+                <!--Bebida Item-->
+                <div class="flex gap-2 w-full">
+                    <img src="./Assets/refri-2.png" alt="Coca Lata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
+                    <div class = "w-full">
+                        <p class="font-bold">Guaraná lata</p>
+                        <p class="text-sm">Guaraná antarctica lata 350ml</p>
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 6,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                                data-price="6" data-name="Guaraná Lata">
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--FIm do Bebida Item-->
+            </div>
+            <!-- Fim Div Bebidas-->
+
+        </div>
 
     </div>
     <!-- Fim do Menu-->
