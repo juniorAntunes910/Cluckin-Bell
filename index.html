@@ -138,7 +138,7 @@
                 <div class="flex gap-2 w-full">
                     <img src="./Assets/refri-1.png" alt="Coca Lata"
                         class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
-                    <div class = "w-full">
+                    <div class="w-full">
                         <p class="font-bold">Coca lata</p>
                         <p class="text-sm">Coca-Cola lata 350ml</p>
 
@@ -157,7 +157,7 @@
                 <div class="flex gap-2 w-full">
                     <img src="./Assets/refri-2.png" alt="Coca Lata"
                         class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300" />
-                    <div class = "w-full">
+                    <div class="w-full">
                         <p class="font-bold">Guaraná lata</p>
                         <p class="text-sm">Guaraná antarctica lata 350ml</p>
 
@@ -180,22 +180,37 @@
     <!-- Fim do Menu-->
 
     <!-- Modal Cart-->
-        <!--<div class ="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center">
-            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-                <h2 class ="text-center font-bold text-bold text-2x1 mb-2">Meu carrinho</h2>
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-bold text-2x1 mb-2">Meu carrinho</h2>
 
+            <div id="card-items" class="flex justify-between mb-2 flex-col"> </div>
+
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega: </p>
+            <input type="text" placeholder="Digite seu Endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1" />
+            <p class="text-red-500 hidden" id="address-warn">
+                Digite seu endereço completo!
+            </p>
+
+            <div>
+                
             </div>
+
         </div>
+    </div>
     <!-- Fim do Modal Cart-->
 
     <!-- Button Cart Footer-->
-        <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-                (<span id="cart-count">2</span>)
-                Veja meu Carrinho
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </footer>
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">2</span>)
+            Veja meu Carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
     <!-- Fim Button Cat Footer-->
 </body>
 
