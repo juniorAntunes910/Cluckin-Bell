@@ -180,7 +180,7 @@
     <!-- Fim do Menu-->
 
     <!-- Modal Cart-->
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center">
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             <h2 class="text-center font-bold text-bold text-2x1 mb-2">Meu carrinho</h2>
 
@@ -195,8 +195,13 @@
                 Digite seu endereço completo!
             </p>
 
-            <div>
-                
+            <div class="flex items-center justify-between md-5 w-full">
+                <button id="close-modal-btn" class ="bg-red-500 text-white px-4 py-1 rounded">
+                    Fechar
+                </button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">
+                    Finalizar pedido
+                </button>
             </div>
 
         </div>
@@ -206,7 +211,7 @@
     <!-- Button Cart Footer-->
     <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
         <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-            (<span id="cart-count">2</span>)
+            (<span id="cart-count">0</span>)
             Veja meu Carrinho
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
