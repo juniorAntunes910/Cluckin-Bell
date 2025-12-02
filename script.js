@@ -60,14 +60,15 @@ function addToCart(name, price) {
     if (existingItem) {
         //Se o item ja existe aumenta a quantidade em mais um 
         existingItem.quantity++
-    } else {
+    }else {
         cart.push({
             name,
             price,
             quantity: 1,
         })
-        updateCartModal()
     }
+    updateCartModal()
+    updateCarCount()
     console.log(cart)
 }
 
@@ -89,7 +90,7 @@ function updateCartModal() {
 
         <div> 
             <button> 
-                Fechar
+                Remover
             </button>
         </div>
     </div>`
@@ -97,4 +98,9 @@ function updateCartModal() {
     cartItemsContainer.appendChild(cartItemElement)
 
     })
+}
+function updateCarCount() {
+    //Aumenta a quantidade no footer 
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0)
+    cartCounter.textContent = totalItems //Insere o valor somado para o texto do footer
 }
